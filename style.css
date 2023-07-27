@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@100&family=Kantumruy+Pro:wght@200&display=swap');
+@import url(carrosel.css);
+
+:root {
+    --cor-fundo: #001C30;
+    --cor-primaria: #64CCC5;
+    --cor-texto: #DAFFFB;
+    --cor-segundaria: #176B87;
+    --cor-tercearia: #253a5c;
+    --cor-rodape: #16344A;
+    --cor-top: #01111f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    height: 2rem;
+}
+
+main {
+    display: flex;
+    padding: 1%;
+    justify-content: center;
+}
+
+header {
+    padding: 0% 0% 0% 0%;
+
+}
+
+.menu {
+    display: flex;
+    gap: 8%;
+    height: 100%;
+    background-color: var(--cor-top);
+
+}
+
+.cabecalho_link {
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    font-size: 2rem;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--cor-texto);
+
+}
+
+.cabecalho_link:hover {
+    transition: 0.5s;
+    color: var(--cor-primaria);
+}
+
+.corpoprincipal {
+    align-items: center;
+    display: flex;
+    justify-content: start;
+    padding: 1%;
+}
+
+.conteudo_principal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.apresentacao {
+    position: relative;
+    align-items: start;
+}
+
+.titulo_principal_1 {
+    position: relative;
+    left: 2%;
+    font-size: 6rem;
+    font-family: K2D;
+    font-style: normal;
+    font-weight: 275;
+    line-height: normal;
+    width: fit-content;
+    height: fit-content;
+    color: var(--cor-texto);
+    font-size: 6rem;
+    text-align: start;
+    padding: 0.0007%;
+    align-items: start;
+    margin-top: 6%;
+    /* margin-right: 70px; */
+    margin-right: 3.75rem;
+}
+
+
+.paragrafo_principal_1 {
+    position: relative;
+    width: fit-content;
+    color: var(--cor-texto);
+    font-size: 2.25rem;
+    text-align-last: left;
+    padding: 2%;
+    width: 44.4375rem;
+    height: 11.25rem;
+    margin-right: 6.875rem;
+    margin-bottom: 12.25rem;
+    display: flex;
+    text-align: justify;
+
+}
+
+.commandblock {
+    position: relative;
+    left: 35rem;
+    top: 19.25rem;
+    width: 100%;
+    height: 100%;
+}
+
+.imagens_programacao {
+    position: relative;
+    bottom: 13.75rem;
+    margin-left: 1.0625rem;
+
+}
+
+.botoes {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    justify-content: start;
+    gap: 3.75rem;
+    top: 39.375rem;
+
+}
+
+.botao {
+    position: relative;
+    font-family: 'Kantumruy Pro', sans-serif;
+    display: flex;
+    background-color: var(--cor-top);
+    border: 0.3rem solid var(--cor-rodape);
+    border-radius: 0.17em;
+    color: var(--cor-texto);
+    font-size: 1.4rem;
+    font-weight: 600;
+    height: 3.6875rem;
+    width: 12.9375rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    bottom: 2.3em;
+}
+
+.icon {
+    position: relative;
+    padding-right: 0.625rem;
+}
+
+.botao:hover {
+    transition: 0.7s;
+    background-color: var(--cor-rodape);
+    border:0.1em solid var(--cor-primaria);
+}
+
+.minhafoto {
+    position: absolute;
+    top: 1.875rem;
+    border-radius: 8%;
+    width: 30rem;
+    height: 30rem;
+    margin-top: 2.5rem;
+    border: 0.5rem solid var(--cor-rodape);
+}
+
+
+
+.rodape {
+    position: relative;
+    top: 4.4rem;
+    padding: 1%;
+    font-weight: 600;
+    text-align: center;
+    font-size: 0.75rem;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: var(--cor-texto);
+    background-color: var(--cor-rodape);
+    float: end;
+}
+.contato_texto{
+    font-size: 16px;
+}
+.img_contato{
+    margin: 0.5em 0.5em;
+}
+.borda2{
+    position:absolute;
+    top: 22.4em;
+    width: 68.4em;
+    height: 34.2em;
+}
+.textotoalembreve {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.embreve {
+    font-size: 6rem;
+    font-family: K2D;
+    font-weight: 17.1875rem;
+    color: var(--cor-texto);
+    font-size: 5.625rem;
+    text-align: start;
+    align-items: start;
+}
+.conteudo_projetos{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    width: 1100px;
+    height: 800px;
+}
+
+.textoembreve {
+    position: relative;
+    width: 43.75rem;
+    color: var(--cor-texto);
+    font-size: 2.25rem;
+    padding: 1.25rem;
+    align-items: start;
+    right: 0.6em;
+    /* border: 1px solid rebeccapurple; */
+}
+
+.botaogitembreve {
+    position: relative;
+    top: 3em;
+    
+}
+
+.minegrass {
+    position: relative;
+    left: 6.25rem;
+    top: 2rem;
+    width: 9.375rem;
+    height: 9.375rem;
+}
+
+.blocoterra {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width:480px) {
+.borda2{
+    display: none;
+}
+    .menu {
+        padding: 3%;
+
+    }
+
+    .cabecalho_link {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        font-size: 0.9rem;
+        left: 13%;
+    }
+
+    .apresentacao {
+        display: flex;
+        flex-direction: column-reverse;
+
+        padding: 5%;
+        
+    }
+    .conteudo_principal {
+        width: auto;
+    }
+    .minhafoto {
+        position: relative;
+        left: 18%;
+        width: 50%;
+        height: 50%;
+        top:6em;
+        
+    }
+
+    .conteudo_principal {
+        position: relative;
+        /* left: %; */
+        margin: 0;
+    }
+    .titulo_principal_1{
+        position: relative;
+        font-size: 2rem;
+        bottom: 10em;
+        left: 0.6em;
+        width: 100%;
+       
+    }
+    .paragrafo_principal_1{
+        width: 17em;
+        position: relative;
+        bottom: 5em;
+        left: 1em;
+        font-size: 1rem;
+        margin: 0;
+    }
+    .imagens_programacao{
+        position: relative;
+        bottom:11em;
+        margin-bottom: 0em;
+    }
+    .imagens_programacao_edit{
+        width: 14%;
+        height: 14%;
+    }
+    .botao{
+        font-size: 1em;
+        width: 8em;
+        margin-bottom: 0px;
+    }
+
+    .botoes {
+        position: relative;
+        left: 1%;
+        top: 23em;
+        gap: 5%;
+        margin-bottom: 5em;
+    }
+    .rodape{
+        width: auto;
+        height: auto;
+        margin-top: 0px;
+        font-size: 0.5rem;
+    }
+
+    /* sobre mim  */   
+    .botaoabout {
+        position: relative;
+        top: 8rem;
+    }
+    .commandblock{
+        width: 50%;
+        position: relative;
+        left: 14em;
+        top: 8em;
+    }
+    .fotobotao{
+        /* position: ; */
+        margin: 0;
+        margin-left: 1em;
+    }
+    .blocoterra{
+        position: relative;
+        bottom: 10em;
+        left: 3em;
+    }
+    .titulo_about{
+        bottom: 4.3em;
+        font-size: 2.4rem;
+        width: 2;
+    }
+    .minegrass{
+        position: relative;
+        left: 0.0001em;
+        top:1em;
+        width: 30%;
+        height: 30%;
+        display: none;
+
+    }
+
+    /* embreve  */
+    .embreve {
+        position: relative;
+        font-size: 2rem;
+        right: 1em;
+        align-items: center;
+    }
+
+    .botaogitembreve {
+        position: relative;
+        left: 0.5rem;
+        bottom: 2.5em;
+    }
+    .textoembreve{
+        font-size: 1.1rem;
+        width: 20rem;
+    }
+    .text {
+
+        color:var(--cor-texto);
+        font-family: 'Fira Sans Condensed', sans-serif;
+        font-size: 13px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      .slideshow-container {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+        margin-bottom: 5em;
+      }
+      
+}
