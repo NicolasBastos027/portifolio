@@ -298,10 +298,10 @@ header {
     }
     .minhafoto {
         position: relative;
-        left: 19%;
-        width: 50%;
-        height: 50%;
-        top:6em;
+        left: 7%;
+        width: 80%;
+        height: 80%;
+        top:4em;
         
     }
 
@@ -313,7 +313,7 @@ header {
     .titulo_principal_1{
         position: relative;
         font-size: 2rem;
-        bottom: 10em;
+        bottom: 12em;
         left: 0.6em;
         width: 100%;
        
@@ -355,7 +355,10 @@ header {
         font-size: 0.5rem;
     }
 
-    /* sobre mim  */   
+    /* sobre mim  */  
+    .sobre{
+        bottom:8em;
+    } 
     .botaoabout {
         position: relative;
         top: 8rem;
@@ -377,9 +380,9 @@ header {
         left: 3em;
     }
     .titulo_about{
-        bottom: 8em;
+        bottom: 10em;
         font-size: 2.4rem;
-        left: 1.7em;
+        left: 1.5em;
     }
     .minegrass{
         position: relative;
