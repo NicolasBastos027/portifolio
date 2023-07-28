@@ -10,7 +10,9 @@
     --cor-rodape: #16344A;
     --cor-top: #01111f;
 }
-
+@media screen and (min-width: 1728px) {
+    
+}
 * {
     margin: 0;
     padding: 0;
@@ -281,10 +283,11 @@ header {
 
     .apresentacao {
         display: flex;
+        width: auto;
         flex-direction: column-reverse;
-
+        left: 1em;
         padding: 5%;
-        left: 2em;
+         width:23em ;
         
     }
     .conteudo_principal {
@@ -292,7 +295,7 @@ header {
     }
     .minhafoto {
         position: relative;
-        left: 14%;
+        left: 19%;
         width: 50%;
         height: 50%;
         top:6em;
@@ -371,9 +374,9 @@ header {
         left: 3em;
     }
     .titulo_about{
-        bottom: 4.3em;
+        bottom: 8em;
         font-size: 2.4rem;
-        width: 2;
+        left: 1.7em;
     }
     .minegrass{
         position: relative;
@@ -421,4 +424,165 @@ header {
         margin-bottom: 5em;
       }
       
+}
+@media screen and (min-width: 1024){
+
+        .menu {
+            padding: 3%;
+    
+        }
+    
+        .cabecalho_link {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            font-size: 0.9rem;
+            left: 13%;
+        }
+    
+        .apresentacao {
+            display: flex;
+            flex-direction: column-reverse;
+    
+            padding: 5%;
+            left: 2em;
+            
+        }
+        .conteudo_principal {
+            width: auto;
+        }
+        .minhafoto {
+            position: relative;
+            left: 14%;
+            width: 50%;
+            height: 50%;
+            top:6em;
+            
+        }
+    
+        .conteudo_principal {
+            position: relative;
+            /* left: %; */
+            margin: 0;
+        }
+        .titulo_principal_1{
+            position: relative;
+            font-size: 2rem;
+            bottom: 10em;
+            left: 0.6em;
+            width: 100%;
+           
+        }
+        .paragrafo_principal_1{
+            width: 17em;
+            position: relative;
+            bottom: 5em;
+            left: 1em;
+            font-size: 1rem;
+            margin: 0;
+        }
+        .imagens_programacao{
+            position: relative;
+            bottom:11em;
+            margin-bottom: 0em;
+        }
+        .imagens_programacao_edit{
+            width: 14%;
+            height: 14%;
+        }
+        .botao{
+            font-size: 1em;
+            width: 8em;
+            margin-bottom: 0px;
+        }
+    
+        .botoes {
+            position: relative;
+            left: 1%;
+            top: 23em;
+            gap: 5%;
+            margin-bottom: 5em;
+        }
+        .rodape{
+            width: auto;
+            height: auto;
+            margin-top: 0px;
+            font-size: 0.5rem;
+        }
+    
+        /* sobre mim  */   
+        .botaoabout {
+            position: relative;
+            top: 8rem;
+        }
+        .commandblock{
+            width: 50%;
+            position: relative;
+            left: 14em;
+            top: 8em;
+        }
+        .fotobotao{
+            /* position: ; */
+            margin: 0;
+            margin-left: 1em;
+        }
+        .blocoterra{
+            position: relative;
+            bottom: 10em;
+            left: 3em;
+        }
+        .titulo_about{
+            bottom: 4.3em;
+            font-size: 2.4rem;
+            width: 2;
+        }
+        .minegrass{
+            position: relative;
+            left: 0.0001em;
+            top:1em;
+            width: 30%;
+            height: 30%;
+            display: none;
+    
+        }
+    
+        /* embreve  */
+        .embreve {
+            position: relative;
+            font-size: 2rem;
+            right: 1em;
+            align-items: center;
+        }
+    
+        .botaogitembreve {
+            position: relative;
+            left: 0.5rem;
+            bottom: 2.5em;
+            margin-bottom: 31%;
+        }
+        .textoembreve{
+            font-size: 1.1rem;
+            width: 20rem;
+        }
+        .text {
+    
+            color:var(--cor-texto);
+            font-family: 'Fira Sans Condensed', sans-serif;
+            font-size: 13px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+          }
+          .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+            margin-bottom: 5em;
+          }  
+          .borda2{
+            width: 10em;
+            height: 10em;
+        }   
 }
