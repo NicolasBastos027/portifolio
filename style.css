@@ -202,8 +202,8 @@ header {
 .borda2{
     position:absolute;
     top: 22.4em;
-    width: 68.4em;
-    height: 34.2em;
+    width: 70%;
+    height: 75%;
 }
 .textotoalembreve {
     padding: 0;
@@ -244,6 +244,7 @@ header {
 .botaogitembreve {
     position: relative;
     top: 3em;
+    
     
 }
 
@@ -395,6 +396,7 @@ header {
         position: relative;
         left: 0.5rem;
         bottom: 2.5em;
+        margin-bottom: 31%;
     }
     .textoembreve{
         font-size: 1.1rem;
