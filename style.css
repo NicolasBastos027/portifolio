@@ -284,6 +284,7 @@ header {
         flex-direction: column-reverse;
 
         padding: 5%;
+        left: 2em;
         
     }
     .conteudo_principal {
@@ -291,7 +292,7 @@ header {
     }
     .minhafoto {
         position: relative;
-        left: 18%;
+        left: 14%;
         width: 50%;
         height: 50%;
         top:6em;
