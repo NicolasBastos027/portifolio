@@ -288,9 +288,10 @@ header {
         display: flex;
         width: auto;
         flex-direction: column-reverse;
-        left: 1em;
+        left: em;
         padding: 5%;
-         width:23em ;
+         width:21em ;
+         border: 1px solid rebeccapurple;
         
     }
     .conteudo_principal {
