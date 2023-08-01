@@ -117,6 +117,22 @@ header {
     /* bottom: 4em; */
 
 }
+.lista_soft_skills{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 23em;
+    bottom: 17em;
+    width: auto;
+    text-align: left;
+}
+.titulo_soft{
+width: auto;
+position: relative;
+bottom: 0.3em;
+left: 5em;
+}
+
 .sobre{
     bottom: 4em;
 }
