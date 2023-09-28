@@ -1,57 +1,88 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
-    <link rel="shortcut icon" type="image/jpg" href="assets/logo.png"/>
+    <title>Clima</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <header>
-        <nav class="menu">
-            <a class="cabecalho_link" href="index.html">Principal</a>
-            <a class="cabecalho_link" href="about.html">Sobre</a>
-            <a class="cabecalho_link" href="projetos.html">Projetos</a>
-        </nav>
+    <header class="headaer_principal">
+        <div class="headaer_principal_coisas">
+            <img class="menu" src="assets/cardápio.svg" alt="">
+            <input class="texto_cidade" id="cidade" placeholder="Digite sua cidade..." onkeyup="executaAPI()"></input><button id="'btn"
+                onclick="executaAPI()" class="btn"></button>
+            <img class="mundo" src="assets/mundo.png" alt="">
+        </div>
+        <section class="clima">
+
+            <div class="itens_clima">
+                <img class="chuva" src="assets/chuva.png" alt="">
+                <h1 class="temperatura" id='temperatura'></h1>
+                <h1 class="temperatura">°C</h1>
+                <div class="caracteristicas_gerais">
+                    <div class="chuvoso">
+                        <img src="assets/marcador.png" alt="" class="chuvoso_img">
+                        <h1 id="city"></h1>
+                    </div>
+                    <div class="chuvoso">
+                        <img class="chuvoso_img" src="assets/chuva-96.png" alt="">
+                        <h1 class="caracteristicas" id="descricao">Chuvoso</h1>
+                    </div>
+                    <div class="chuvoso">
+                        <img class="caracteristicas_imagens" src="assets/termômetro.png" alt="">
+                        <h1 class="caracteristicas">sensação termica:</h1><h1 class="caracteristicas" id="umidade"></h1><h1 class="caracteristicas">°C</h1>
+                    </div>
+                    <div class="chuvoso">
+                        <img class="caracteristicas_imagens" src="assets/relógio.png" alt="">
+                        <h1 class="caracteristicas">qua, 14:33</h1>
+                    </div>
+                </div>
+            </div>
+            <section class="previsoes">
+                <div class="geral_previsoes">
+                    <div class="previsoes_caracteristicas">
+                        <img class="img_previsoes" src="assets/chuva.png" alt="">
+                        <h1>33°C</h1>
+                        <p>14:33</p>
+                    </div>
+                    <div class="previsoes_caracteristicas">
+                        <img class="img_previsoes nuvem" src="assets/nuvem.png" alt="">
+                        <h1>30°C</h1>
+                        <p>15:33</p>
+                    </div>
+                    <div class="previsoes_caracteristicas">
+                        <img class="img_previsoes nuvem" src="assets/nuvem.png" alt="">
+                        <h1>31°C</h1>
+                        <p>16:33</p>
+                    </div>
+                    <div class="previsoes_caracteristicas">
+                        <img class="img_previsoes nuvem" src="assets/nuvem.png" alt="">
+                        <h1>31°C</h1>
+                        <p>17:33</p>
+                    </div>
+                    <div class="previsoes_caracteristicas">
+                        <img class="img_previsoes nuvem" src="assets/nuvem.png" alt="">
+                        <h1>33°C</h1>
+                        <p>18:33</p>
+                    </div>
+                    <div class="previsoes_caracteristicas">
+                        <img class="img_previsoes lua" src="assets/lua.png" alt="">
+                        <h1>31°C</h1>
+                        <p>19:33</p>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+
+        </div>
     </header>
-    <main class="apresentacao">
-        <section class="conteudo_principal">
-            <h1 class="titulo_principal_1">Software Developer</h1>
-            <p class="paragrafo_principal_1">Opa falae!! Me chamo Nicolas Bastos, sou um desenvolvedor com especialidade
-                em JS, Delphi, C,
-                HTML e CSS.</p>
-            <section class="imagens_programacao">
-                <img src="assets/js.png" class="imagens_programacao_edit" alt=""><img src="assets/delphi.png"
-                    class="imagens_programacao_edit" alt=""><img src="assets/c.png" class="imagens_programacao_edit"
-                    alt=""><img src="assets/html.png" class="imagens_programacao_edit" alt=""><img src="assets/css.png"
-                    class="imagens_programacao_edit" alt="">
-            </section>
-
-        </section>
-
-
-
-        <section class="fotobotao">
-            <img class="minhafoto" src="assets/nicolasbastos.png" alt="">
-            <section class="botoes">
-
-
-                <a class="botao" href="https://github.com/NicolasBastos027"><img class="icon" src="assets/github.png"
-                        alt="">Github</a>
-                <a class="botao" href="https://www.linkedin.com/in/nicolas-bastos/"> <img class="icon"
-                        src="assets/linkedin.png" alt="">Linkedin</a>
-            </section>
-        </section>
-    </main>
-    <footer class="rodape">
-        <h1>Entre em contato</h1>
-        <p class="contato_texto"><a href="http://wa.me/5516981376185"><img class="img_contato"
-                    src="assets/zap.png"></a>(16) 98137-6185 <img class="img_contato" src="assets/mail.png" alt="">
-            nicolasbastos716rp@gmail.com </p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
