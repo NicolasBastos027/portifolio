@@ -140,6 +140,13 @@ header {
     display: flex;
     justify-content: center;
     text-align: center;
+    color: var(--cor-azul-claro);
+    font-family: K2D;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 275;
+    line-height: normal;
+    margin-bottom: 0.4gem;
 }
 
 .conteudo_sobre_e_Soft {
