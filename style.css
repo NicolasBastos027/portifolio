@@ -9,10 +9,11 @@
     --cor-tercearia: #253a5c;
     --cor-rodape: #16344A;
     --cor-top: #01111f;
+    --cor-azul-claro: #50B6E2;
+    --cor-azul-escuro: #001C30;
+    --cor-fundo-linguagens: #8D8C9D;
 }
-@media screen and (min-width: 1728px) {
-    
-}
+
 * {
     margin: 0;
     padding: 0;
@@ -36,8 +37,9 @@ header {
 
 .menu {
     display: flex;
-    gap: 8%;
-    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+
     background-color: var(--cor-top);
 
 }
@@ -45,8 +47,11 @@ header {
 .cabecalho_link {
     display: flex;
     justify-content: center;
+    margin-left: 2em;
+    margin-right: 2em;
     padding: 3%;
     font-size: 2rem;
+    align-items: center;
     font-family: 'Fira Sans Condensed', sans-serif;
     font-weight: 600;
     text-decoration: none;
@@ -76,12 +81,11 @@ header {
 }
 
 .apresentacao {
-    position: relative;
+
     align-items: start;
 }
 
-.titulo_principal_1 {
-    position: relative;
+.titulo_principal_home {
     left: 2%;
     font-size: 6rem;
     font-family: K2D;
@@ -96,13 +100,11 @@ header {
     padding: 0.0007%;
     align-items: start;
     margin-top: 6%;
-    /* margin-right: 70px; */
     margin-right: 3.75rem;
 }
 
 
-.paragrafo_principal_1 {
-    position: relative;
+.paragrafo_principal_home {
     width: fit-content;
     color: var(--cor-texto);
     font-size: 2.25rem;
@@ -111,48 +113,80 @@ header {
     width: 44.4375rem;
     height: 11.25rem;
     margin-right: 6.875rem;
-    margin-bottom: 12.25rem;
     display: flex;
     text-align: justify;
     /* bottom: 4em; */
 
 }
-.lista_soft_skills{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 23em;
-    bottom: 17em;
-    width: auto;
-    text-align: left;
-}
-.titulo_soft{
-width: auto;
-position: relative;
-bottom: 0.3em;
-left: 5em;
-}
-
-.sobre{
-    bottom: 4em;
-}
-.commandblock {
-    position: relative;
-    left: 46rem;
-    top: 11.25rem;
-    width: 100%;
-    height: 100%;
-}
 
 .imagens_programacao {
-    position: relative;
-    bottom: 13.75rem;
     margin-left: 1.0625rem;
 
 }
 
+
+/* sobre mim  */
+.inicio_sobre_mim {
+    display: flex;
+    flex-direction: column;
+}
+
+.corpo_principal {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo_about {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.conteudo_sobre_e_Soft {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo_soft {
+    width: auto;
+}
+
+.sobre {
+    display: flex;
+    margin-bottom: 20em;
+}
+
+.conteudo_Sobre {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 60% 40%;
+}
+
+.sobre_mim_geral {
+    display: flex;
+    flex-direction: row;
+}
+
+.texto_sobre_mim {
+    color: #E7EAF1;
+    font-family: Kantumruy Pro;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-left: 0.4em;
+    width: 60%;
+    height: 615px;
+    margin-left: 5em;
+}
+
+.img_grafo {
+    width: 446px;
+    height: 446px;
+    margin-right: 10em;
+}
+
 .botoes {
-    position: relative;
     display: flex;
     justify-content: space-between;
     justify-content: start;
@@ -162,7 +196,6 @@ left: 5em;
 }
 
 .botao {
-    position: relative;
     font-family: 'Kantumruy Pro', sans-serif;
     display: flex;
     background-color: var(--cor-top);
@@ -177,33 +210,101 @@ left: 5em;
     justify-content: center;
     text-decoration: none;
     bottom: 2.3em;
+    margin-bottom: 2em;
 }
 
 .icon {
-    position: relative;
     padding-right: 0.625rem;
 }
 
 .botao:hover {
     transition: 0.7s;
     background-color: var(--cor-rodape);
-    border:0.1em solid var(--cor-primaria);
+    border: 0.1em solid var(--cor-primaria);
 }
 
 .minhafoto {
-    position: absolute;
-    top: 1.875rem;
     border-radius: 8%;
     width: 30rem;
     height: 30rem;
     margin-top: 2.5rem;
     border: 0.5rem solid var(--cor-rodape);
+    margin-bottom: 2em;
+}
+
+.titulo_linguagens {
+    color: var(--cor-azul-claro);
+    font-family: K2D;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 275;
+    line-height: normal;
+    margin-bottom: 1em;
+}
+
+.linguagens {
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo_linguagens {
+    margin-top: 6em;
+}
+
+.linguagens_elementos_geral {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 4em;
+    margin-left: 4em;
+}
+
+.linguagens_elementos {
+    justify-content: space-between;
+    gap: 129px;
+    width: 395px;
+    height: 654px;
+    background-color: var(--cor-fundo-linguagens);
+}
+
+.elemento_titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #000;
+    font-family: K2D;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 275;
+    line-height: normal;
+    padding: 1em;
+    background-color: var(--cor-fundo-linguagens);
+}
+
+.elemento_titulo_linguagem {
+    margin-left: 10px;
+    background-color: var(--cor-fundo-linguagens);
+
+}
+
+.imagem_linguagens {
+    width: 140px;
+    height: 140px;
+    background-color: var(--cor-fundo-linguagens);
+}
+
+.elemento_texto {
+    color: #000;
+    font-family: Kantumruy Pro;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding: 1em;
+    background-color: var(--cor-fundo-linguagens);
 }
 
 
-
 .rodape {
-    position: relative;
     top: 4.4rem;
     padding: 1%;
     font-weight: 600;
@@ -214,18 +315,16 @@ left: 5em;
     background-color: var(--cor-rodape);
     float: end;
 }
-.contato_texto{
+
+.contato_texto {
     font-size: 16px;
 }
-.img_contato{
+
+.img_contato {
     margin: 0.5em 0.5em;
 }
-.borda2{
-    position:absolute;
-    top: 22.4em;
-    width: 70%;
-    height: 75%;
-}
+
+
 .textotoalembreve {
     padding: 0;
     margin: 0;
@@ -243,7 +342,8 @@ left: 5em;
     text-align: start;
     align-items: start;
 }
-.conteudo_projetos{
+
+.conteudo_projetos {
     display: flex;
     flex-direction: column;
     padding: 1em;
@@ -252,7 +352,6 @@ left: 5em;
 }
 
 .textoembreve {
-    position: relative;
     width: 43.75rem;
     color: var(--cor-texto);
     font-size: 2.25rem;
@@ -262,17 +361,9 @@ left: 5em;
     /* border: 1px solid rebeccapurple; */
 }
 
-.botaogitembreve {
-    position: relative;
-    top: 3em;
-    
-    
-}
-
 .minegrass {
-    position: relative;
     left: 32rem;
-    bottom:10em ;
+    bottom: 10em;
     width: 9.375rem;
     height: 9.375rem;
 }
@@ -283,328 +374,6 @@ left: 5em;
     align-items: center;
 }
 
-@media (max-width:480px) {
-.borda2{
-    display: none;
-}
-    .menu {
-        padding: 3%;
+@media (max-width:480px) {}
 
-    }
-
-    .cabecalho_link {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        font-size: 0.9rem;
-        left: 5%;
-    }
-
-    .apresentacao {
-        display: flex;
-        width: auto;
-        flex-direction: column-reverse;
-        left: em;
-        padding: 5%;
-         width:21em ;
-        
-    }
-    .conteudo_principal {
-        width: auto;
-    }
-    .minhafoto {
-        position: relative;
-        left: 7%;
-        width: 80%;
-        height: 80%;
-        top:4em;
-        
-    }
-
-    .conteudo_principal {
-        position: relative;
-        /* left: %; */
-        margin: 0;
-    }
-    .titulo_principal_1{
-        position: relative;
-        font-size: 2rem;
-        bottom: 12em;
-        left: 0.6em;
-        width: 100%;
-       
-    }
-    .paragrafo_principal_1{
-        width: 17em;
-        position: relative;
-        bottom: 5em;
-        left: 1em;
-        font-size: 1rem;
-        margin: 0;
-    }
-    .imagens_programacao{
-        position: relative;
-        bottom:11em;
-        margin-bottom: 0em;
-    }
-    .imagens_programacao_edit{
-        width: 14%;
-        height: 14%;
-    }
-    .botao{
-        font-size: 1em;
-        width: 8em;
-        margin-bottom: 0px;
-    }
-
-    .botoes {
-        position: relative;
-        left: 1%;
-        top: 23em;
-        gap: 5%;
-        margin-bottom: 5em;
-    }
-    .rodape{
-        width: auto;
-        height: auto;
-        margin-top: 0px;
-        font-size: 0.5rem;
-    }
-
-    /* sobre mim  */  
-    .sobre{
-        bottom:8em;
-    } 
-    .botaoabout {
-        position: relative;
-        top: 8rem;
-    }
-    .commandblock{
-        width: 50%;
-        position: relative;
-        left: 14em;
-        top: 8em;
-    }
-    .fotobotao{
-        /* position: ; */
-        margin: 0;
-        margin-left: 1em;
-    }
-    .blocoterra{
-        position: relative;
-        bottom: 10em;
-        left: 3em;
-    }
-    .titulo_about{
-        bottom: 10em;
-        font-size: 2.4rem;
-        left: 1.5em;
-    }
-    .minegrass{
-        position: relative;
-        left: 0.0001em;
-        top:1em;
-        width: 30%;
-        height: 30%;
-        display: none;
-
-    }
-
-    /* embreve  */
-    .embreve {
-        position: relative;
-        font-size: 2rem;
-        right: 1em;
-        align-items: center;
-    }
-
-    .botaogitembreve {
-        position: relative;
-        left: 0.5rem;
-        bottom: 2.5em;
-        margin-bottom: 31%;
-    }
-    .textoembreve{
-        font-size: 1.1rem;
-        width: 20rem;
-    }
-    .text {
-
-        color:var(--cor-texto);
-        font-family: 'Fira Sans Condensed', sans-serif;
-        font-size: 13px;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
-        width: 100%;
-        text-align: center;
-      }
-      .slideshow-container {
-        max-width: 100%;
-        position: relative;
-        margin: auto;
-        margin-bottom: 5em;
-      }
-      
-}
-@media screen and (min-width: 1024){
-
-        .menu {
-            padding: 3%;
-    
-        }
-    
-        .cabecalho_link {
-            display: flex;
-            justify-content: center;
-            position: relative;
-            font-size: 0.9rem;
-            left: 13%;
-        }
-    
-        .apresentacao {
-            display: flex;
-            flex-direction: column-reverse;
-    
-            padding: 5%;
-            left: 2em;
-            
-        }
-        .conteudo_principal {
-            width: auto;
-        }
-        .minhafoto {
-            position: relative;
-            left: 14%;
-            width: 50%;
-            height: 50%;
-            top:6em;
-            
-        }
-    
-        .conteudo_principal {
-            position: relative;
-            /* left: %; */
-            margin: 0;
-        }
-        .titulo_principal_1{
-            position: relative;
-            font-size: 2rem;
-            bottom: 10em;
-            left: 0.6em;
-            width: 100%;
-           
-        }
-        .paragrafo_principal_1{
-            width: 17em;
-            position: relative;
-            bottom: 5em;
-            left: 1em;
-            font-size: 1rem;
-            margin: 0;
-        }
-        .imagens_programacao{
-            position: relative;
-            bottom:11em;
-            margin-bottom: 0em;
-        }
-        .imagens_programacao_edit{
-            width: 14%;
-            height: 14%;
-        }
-        .botao{
-            font-size: 1em;
-            width: 8em;
-            margin-bottom: 0px;
-        }
-    
-        .botoes {
-            position: relative;
-            left: 1%;
-            top: 23em;
-            gap: 5%;
-            margin-bottom: 5em;
-        }
-        .rodape{
-            width: auto;
-            height: auto;
-            margin-top: 0px;
-            font-size: 0.5rem;
-        }
-    
-        /* sobre mim  */   
-        .botaoabout {
-            position: relative;
-            top: 8rem;
-        }
-        .commandblock{
-            width: 50%;
-            position: relative;
-            left: 14em;
-            top: 8em;
-        }
-        .fotobotao{
-            /* position: ; */
-            margin: 0;
-            margin-left: 1em;
-        }
-        .blocoterra{
-            position: relative;
-            bottom: 10em;
-            left: 3em;
-        }
-        .titulo_about{
-            bottom: 4.3em;
-            font-size: 2.4rem;
-            width: 2;
-        }
-        .minegrass{
-            position: relative;
-            left: 0.0001em;
-            top:1em;
-            width: 30%;
-            height: 30%;
-            display: none;
-    
-        }
-    
-        /* embreve  */
-        .embreve {
-            position: relative;
-            font-size: 2rem;
-            right: 1em;
-            align-items: center;
-        }
-    
-        .botaogitembreve {
-            position: relative;
-            left: 0.5rem;
-            bottom: 2.5em;
-            margin-bottom: 31%;
-        }
-        .textoembreve{
-            font-size: 1.1rem;
-            width: 20rem;
-        }
-        .text {
-    
-            color:var(--cor-texto);
-            font-family: 'Fira Sans Condensed', sans-serif;
-            font-size: 13px;
-            padding: 8px 12px;
-            position: absolute;
-            bottom: 8px;
-            width: 100%;
-            text-align: center;
-          }
-          .slideshow-container {
-            max-width: 100%;
-            position: relative;
-            margin: auto;
-            margin-bottom: 5em;
-          }  
-          .borda2{
-            width: 10em;
-            height: 10em;
-        }   
-}
+@media screen and (min-width: 1024) {}
